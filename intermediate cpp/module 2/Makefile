@@ -1,7 +1,7 @@
 CC = g++
 
 CourseTest: main.o Course.o Student.o Teacher.o
-	$(CC) $(CFLAGS) -o CourseTest main.o Course.o Student.o Teacher.o
+	$(CC) -o CourseTest main.o Course.o Student.o Teacher.o
 
 main.o: main.cpp
 	$(CC) -c main.cpp
